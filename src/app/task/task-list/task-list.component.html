@@ -1,0 +1,7 @@
+<div class="task-container">
+    <div class="d-flex" *ngFor="let task of tasks">
+        <h3>{{task.title}}</h3>
+        <p>Priority: {{task.priority | priority}}</p>
+        <button>{{task.complete ? 'Completed' : 'Mark as Complete'}}</button>
+    </div>
+</div>
